@@ -16,9 +16,19 @@ player.src = './assets/ACharDown.png'
 image.onload = () =>{
 
 ctx.drawImage(image,-600,-700, )
-ctx.drawImage(player,canvas.width / 2 - player.width /2
-, canvas.height / 2 - player.width/2 )
+ctx.drawImage(player,
+    0,
+    0,
+    player.width / 2,
+    player.height-85,
+    canvas.width / 2 - player.width /2,
+    canvas.height / 2 - player.width/2 ,
+    player.width /2,
+    player.height - 70,)
 }
 
+window.addEventListener('keydown', (e)=>{
+    console.log('go')
+})
 
 
